@@ -9,7 +9,7 @@
 body{
     padding: 0;
     width: 100%;
-    background: #f2f2f2;
+    /* background: #f2f2f2; */
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     margin: 0 auto;
@@ -148,11 +148,15 @@ header .menu .logo:hover{
 
 .presentacion{
     display: flex;
-    margin: 0px 20px;
+    margin: 0px 0px;
+    padding-left: 20px;
+    padding-right: 20px;
    justify-content: center;
    align-items: center;
    padding-top: 40px;
    flex-direction: row;
+   padding-bottom: 40px;
+   background: #f2f2f2;
 }
 
 .presentacion .quienesSomos{
@@ -553,3 +557,70 @@ footer .contacto a{
         font-size: 0.8em;
     }
 }
+
+/* CANVAS y SVG */
+
+ .lienzo-contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+    background: #fff;
+    overflow: hidden;
+    
+ }
+
+.div-canvas{
+ margin-left: 200px; 
+ justify-self: right;
+} 
+
+.lienzo{
+    cursor: pointer;
+}
+
+.lienzo:hover{
+    transform: translateX(100px);
+    transition: 2s;
+    opacity: .6;
+}
+
+.lienzo:not(:hover){
+    transition: 2s;
+    opacity: 1;
+}
+
+.blackball{
+    cursor: pointer;
+}
+
+.blackball:hover{
+    /* transform: translateX(50px); */
+    transform: translateY(200px);
+    transition: 3s;
+}
+
+.blackball:not(:hover){
+    /* transform: translateX(50px); */
+    transform: translateY(0px);
+    transition: 3s;
+}
+
+.blacktext{
+    cursor: pointer;
+}
+
+.blacktext:hover{
+        /* transform: translateX(50px); */
+        transform: translateY(-100px);
+        transition: 3s;
+    }
+
+    .blacktext:not(:hover){
+        /* transform: translateX(50px); */
+        transform: translateY(10px);
+        transition: 3s;
+    }
