@@ -1,0 +1,555 @@
+*{
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    width: 100%;
+    background: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+/* header Menu: */
+
+
+header .menu {
+    background: #000;
+    width: 100%;
+    text-align: right;
+    font-size: 1em;
+    flex-wrap: wrap;
+}
+
+.logo{
+    float: left;
+    width: 0%;
+    opacity: .5;
+}
+
+
+
+header .menu a{
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+header .menu .somos:hover,
+header .menu .servicio:hover,
+header .menu .contacto:hover{
+    color: purple;
+}
+
+header .menu .logo:hover{
+    opacity: .7;
+}
+
+/* Principal: */
+.contenedor{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.principal{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    max-height: 600px;
+    background: url('../img/banner2.png') #000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+
+
+.principal .contenedor .contenedor-texto{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 30% auto;
+}
+
+.principal .contenedor-texto .texto{
+    border: 2px solid rgba(255, 255, 255, 0.5); 
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.principal .contenedor-texto .texto h1,
+.principal .contenedor-texto .texto h2 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+/* Servicios */
+
+.subtitulo{
+    color: #000;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    padding: 40px 0;
+    background: #fff;
+}
+
+.servicios{
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    padding-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.servicios .servicio{
+    width: 30%;
+    margin: auto;
+    
+    min-width: 340px;
+}
+
+.servicios .servicio .serv{
+    width: 100%;
+}
+
+.servicios .servicio .serv img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.servicios .servicio .descripcion-servicio{
+    text-align: center;
+    padding: 20px;
+    line-height: 27px;
+}
+
+.servicios .servicio .descripcion-servicio h5{
+    color: purple;
+}
+
+.servicios .servicio .descripcion-servicio p{
+    color: #5a5a5a;
+}
+
+/* Quienes somos */
+
+
+.presentacion{
+    display: flex;
+    margin: 0px 20px;
+   justify-content: center;
+   align-items: center;
+   padding-top: 40px;
+   flex-direction: row;
+}
+
+.presentacion .quienesSomos{
+    text-align: center; 
+    padding-right: 50px;
+}
+
+.presentacion .quienesSomos .quienesSomos-titulo{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color:#5a5a5a;
+}
+.presentacion .quienesSomos p{
+   line-height: 37px;  
+   margin-bottom: 25px;
+   padding-top: 20px;
+}
+
+.presentacion .quienesSomos .stack ul li{
+    list-style: none;
+    display: inline;    
+    padding: 10px 20px;
+}
+
+.presentacion .quienesSomos .stack ul .js{
+    color: #f7df1e;
+    font-size: 50px;
+}
+
+.presentacion .quienesSomos .stack ul .html{
+    color: #e34f26;
+    font-size: 50px;
+}
+
+.presentacion .quienesSomos .stack ul .css{
+    color: #002561;
+    font-size: 50px;
+}
+
+.presentacion .quienesSomos .stack ul .php{
+    color: #4f5b93;
+    font-size: 50px;
+}
+
+.presentacion .quienesSomos .stack ul .wp{
+    color: #21759b;
+    font-size: 50px;
+}
+
+.presentacion .quienesSomos .stack ul .ra{
+    color: #00d8ff;
+    font-size: 50px;
+}
+
+.presentacion .quienesSomos .stack ul .nj{
+    color: #215732;
+    font-size: 50px;
+}
+
+.presentacion aside{
+    flex-direction: row;
+    justify-content: left;
+}
+
+.presentacion aside .videoPresentacion{
+    min-width: 580px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.presentacion aside .play{
+    background: purple;
+    padding: 20px;
+    color: #fff;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    left: 0;
+    float: inline-start;
+    z-index: 1000;
+    margin-top: -90px;
+    margin-left: -15px;
+}
+
+.presentacion aside .play:hover{
+    
+    background-color: #ea1d5d;
+    border: 2px solid #ea1d5d;
+}
+
+
+/* newsLetters*/
+
+.newsLetters{
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 40px 1px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.newsLetters h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.newsLetters .grouping input[type="text"],
+.newsLetters .grouping input[type="email"]{
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.newsLetters .grouping input[type="text"]:focus,
+.newsLetters .grouping input[type="email"]:focus{
+    border: 2px solid #4aae20;
+    outline: none;
+}    
+.newsLetters .grouping input[type="submit"]{
+    padding: 10px;
+    width: 15%;
+    border-radius: 5px;
+    background: #4aae20;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.newsLetters .grouping input[type="submit"]:hover{
+    opacity: .9;
+}
+
+/* Footer: */
+
+footer{
+    background: #000;
+    text-align: center;
+    padding-top: 40px;
+}
+
+footer .redesSociales{
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+footer .redesSociales a{
+    margin: 0 20px;
+}
+
+footer .redesSociales .instagram i{
+    color: #c13584;
+    text-decoration: none;
+    padding: 20px 30px;
+    font-size: 50px;
+}
+
+footer .redesSociales .facebook i{
+    color: #1877f2;
+    text-decoration: none;
+    padding: 20px 30px;
+    font-size: 50px;
+}
+
+footer .redesSociales .youtube i{
+    color: #ff0000;
+    text-decoration: none;
+    padding: 20px 30px;
+    font-size: 50px;
+}
+
+footer .redesSociales .instagram i:hover{
+    color: #fff;
+    background: #c13584;
+    border-radius: 5px;
+    opacity: .7;
+}
+
+footer .redesSociales .facebook i:hover{
+    background: #1877f2;
+    color: #fff;
+    border-radius: 5px;
+    opacity: .7;
+}
+
+footer .redesSociales .youtube i:hover{
+    background: #ff0000;
+    color: #fff;
+    border-radius: 5px;
+    opacity: .7;
+}
+
+footer .contacto{
+    padding: 40px;
+}
+
+footer .contacto .gmail{
+    color: #fff;
+    text-decoration: none;
+}
+footer .contacto .gmail i{
+    color: #ea4335;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+footer .contacto .whatsapp{
+    color: #fff;
+    text-decoration: none;
+    display: inline;
+}
+footer .contacto .whatsapp i{
+    color: #4aae20;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+footer .contacto .whatsapp:hover{
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+footer .contacto .whatsapp:not(:hover){
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+/*  footer p{
+    color: #fff;
+    text-align: end;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    padding: 3px 5px;
+}  */
+
+footer .contacto a{
+    display: block;
+}
+
+/* Formulario de contacto (estilos): */
+
+.contenedor{
+    max-width:500px;
+    margin:0px auto;
+}
+
+.contenedor .formulario .titulo-contacto{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: #5a5a5a;
+}
+
+.formulario{
+    margin-top: 100px; 
+}
+
+.formulario .contentInput{
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.formulario .contentInput input[type='text'],
+.formulario .contentInput input[type='tel'],
+.formulario .contentInput input[type='email'],
+.formulario .contentInput textarea{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+    border: none;
+    /* background: none; */
+    border-bottom: 2px solid #ccc;
+}
+
+.formulario .contentInput textarea{
+    max-width: 100%;
+    min-width: 100%;
+    height: 150px;
+    min-height: 150px;
+    max-height: 250px;
+}
+
+.formulario .contentInput input[type='text']:focus,
+.formulario .contentInput input[type='tel']:focus,
+.formulario .contentInput input[type='email']:focus,
+.formulario .contentInput textarea:focus{
+    outline: none;
+    border-bottom: 2px solid #0099e5;
+}
+
+.formulario ul li{
+    /* display: none; */
+    color: red;
+    text-align: left;
+    margin-left: 17px;
+    /* list-style: none; */
+}
+
+.formulario .btn-registro{
+    width: 100%;
+    border-radius: 0px 0px 5px 5px;
+    padding: 10px 10px;
+    font-family: 'Roboto', sans-serif;
+    background: #0099e5;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.formulario .btn-registro:hover{
+    background: #00bce4;
+}    
+
+/*font-family: 'Roboto Condensed', sans-serif;*/
+
+@media screen and (max-width:1100px) {
+    .presentacion .quienesSomos{
+        padding-right: 0px;
+    }
+    .presentacion .quienesSomos p{
+     line-height: 27px;
+    }
+    .presentacion{
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .presentacion aside .videoPresentacion{
+        max-width: 560px;
+        min-width: 100%;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .quienesSomos{
+         margin-bottom: 40px;
+        /*padding-left:30px;
+        padding-right: 30px; */
+    }
+}
+
+@media screen and (max-width:730px){
+    .formulario{
+        margin-left: 10px; 
+        margin-right: 10px; 
+    }
+/*     .principal .contenedor-texto{
+        margin-left: -10%;
+    } */
+    .principal .contenedor-texto .texto h1{
+       font-size: 40px;
+    }
+    .presentacion{
+        padding-left:30px;
+        padding-right: 40px;
+    }
+    .presentacion aside .videoPresentacion{
+    width: 100%;
+    overflow: hidden;
+    }
+    .quienesSomos p{
+        font-size: 16px;
+    }
+
+    .stack li i{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    html{
+        padding: 0;
+        margin: 0;
+    }
+    .menu .conteiner-logo a{
+        width: 100%;
+        text-align: center;
+    }
+    .menu-r{
+        text-align: center;
+        width: 100%;
+        font-size: 0.8em;
+    }
+}
