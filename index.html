@@ -123,6 +123,63 @@
       </div>
   </section>
 
+  <section class="webinars-contenedor">
+    <div class="titulowebinars">
+      <h2>Webinars:</h2>
+      <p>Agendate nuestros webinar gratuitos.</p>
+    </div>
+    <div class="loswebinars">
+      <div class="webinar">
+        <img src="assets/img/marketing-webinar.jpg" alt="">
+       <p><strong>Marketing Online:</strong></p>
+       <p>Incrementa las ventas online</p>
+      </div>
+      <div class="webinar">
+        <img src="assets/img/seo-webinar.jpg" alt="">
+        <p><strong>SEO begginers:</strong></p>
+        <p>Posicionamiento en google</p>
+      </div>
+      <div class="webinar">
+        <img src="assets/img/socialmedia-webinar.jpg" alt="">
+        <p><strong>Gestión de Redes:</strong></p>
+        <p>gestioná las redes sociales</p>
+      </div>
+      <div class="webinar">
+        <img src="assets/img/team-webinar.jpg" alt="">
+        <p><strong>Team coaching:</strong></p>
+        <p>Liderazgo de equipo</p>
+      </div>
+    </div>
+
+    <div class="agenda">
+      <form clas="form-agenda" action="">
+          <select class="unselect" id="nameClase">
+            <option value="Marketing Online">Marketing Online</option>
+            <option value="SEO begginers">SEO begginers</option>
+            <option value="Gestión de Redes">Gestión de Redes</option>
+            <option value="Team coaching">Team coaching</option>
+          </select>
+          <select class="unselect" id="fechaClase">
+            <option value="2021-11-03">2021-11-03</option>
+            <option value="2021-11-08">2021-11-08</option>
+            <option value="2021-11-10">2021-11-10</option>
+            <option value="2021-11-15">2021-11-15</option>
+          </select>
+        <div class="btnsagenda">
+          <input type="submit" class="btn-agendag" id="btn-guardar-agenda" value="Guardar"/>
+        </div>
+      </form>
+      
+      
+      <div class="misagendados">
+        <h2>Tus webinars:</h2>
+        <div id="listaagendados">
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
     <section class="newsLetters">
       <form action="">
         <h4>Ingresá tu mail para recibir novedades y promociones</h4>
@@ -148,6 +205,7 @@
         >
       </div>
     </footer>
+    <script src="assets/js/storage.js"></script>
     <script src="assets/js/appvideo.js"></script>
     <script type="text/javascript" src="assets/js/canvas.js"></script>
   </body>

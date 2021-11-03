@@ -540,6 +540,9 @@ footer .contacto a{
     .stack li i{
         font-size: 30px;
     }
+    .loswebinars{
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width:560px) {
@@ -568,9 +571,10 @@ footer .contacto a{
     align-items: center;
     margin: auto;
     flex-wrap: wrap;
-    background: #fff;
+    background: url('../img/pattern3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     overflow: hidden;
-    
  }
 
 .div-canvas{
@@ -598,13 +602,11 @@ footer .contacto a{
 }
 
 .blackball:hover{
-    /* transform: translateX(50px); */
     transform: translateY(200px);
     transition: 3s;
 }
 
 .blackball:not(:hover){
-    /* transform: translateX(50px); */
     transform: translateY(0px);
     transition: 3s;
 }
@@ -614,13 +616,119 @@ footer .contacto a{
 }
 
 .blacktext:hover{
-        /* transform: translateX(50px); */
         transform: translateY(-100px);
         transition: 3s;
     }
 
     .blacktext:not(:hover){
-        /* transform: translateX(50px); */
         transform: translateY(10px);
         transition: 3s;
     }
+
+    /* webinars  */
+
+    .webinars-contenedor{
+        width: 100%;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        background: #c13584;
+        color: #fff;
+    }
+
+    .titulowebinars{
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .loswebinars{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .misagendados h2{
+        color: #c13584;
+    }
+
+    .webinar{
+        width: 100%;
+        text-align: center;
+        left: 27px;
+        margin-bottom: 20px;
+    }
+
+    .webinar img{
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    .selectwebinars{
+        width: 100%;
+    }
+
+.agenda{
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #333;
+    width: 70%;
+    background: #f2f2f2;
+    padding: 20px;
+    padding-top: 10px;
+}
+
+/* Agenda con storage */
+.agenda li{
+    list-style: none;
+}
+
+.form-agenda{
+    width: 100%;
+}
+
+.unselect{
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    color: #333;
+    text-align: center;
+    background: #fff;
+}
+
+.btn-agendag{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 80px;
+    padding: 5px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    background: #4aae20;
+    cursor: pointer;
+}
+
+.btn-agendav{
+    margin-top: 10px;
+    width: 80px;
+    padding: 5px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    background:#ea4335;
+    cursor: pointer;
+}
+
+.btn-agendag:hover{
+    opacity: .8;
+}
+
+.btn-agendav:hover{
+    opacity: .8;
+}
